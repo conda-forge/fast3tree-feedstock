@@ -12,7 +12,7 @@ source:
     - 0000_make_CC.patch
 
 build:
-  number: 3
+  number: 4
   skip: true  # [win]
 
 requirements:
@@ -23,6 +23,7 @@ requirements:
     - python
     - pip
     - numpy
+    - setuptools
   run:
     - python
 
