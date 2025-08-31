@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 4d4abe9af5965949b551241d46edeaa278bfbe960dabdc8828caaac98d080b25
   patches:
     - 0000_make_CC.patch
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
 
 requirements:
