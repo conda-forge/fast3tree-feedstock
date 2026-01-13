@@ -1,5 +1,5 @@
 {% set name = "fast3tree" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4d4abe9af5965949b551241d46edeaa278bfbe960dabdc8828caaac98d080b25
+  sha256: 2f5a79d294e23a91b3e5eaf96281bd282a39f5609da6aef848a7abc79ae5a599
   patches:
     - 0000_make_CC.patch
 
 build:
-  number: 5
+  number: 0
   skip: true  # [win]
 
 requirements:
